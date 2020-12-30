@@ -1,0 +1,18 @@
+---
+version: "3.9"
+services:
+  db:
+    image: mariadb:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "random"
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_DATABASE: foodvariety
+      MYSQL_USER: foodvariety
+      MYSQL_PASSWORD: foodvariety
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

@@ -1,0 +1,9 @@
+{
+    "name": "foodvariety_system",
+    "version": "1.0.0",
+    "scripts": {
+        "stack:up": "docker-compose up",
+        "stack:clean": "docker-compose down && docker volume rm foodvariety_db_data",
+        "db:connect": "mysql -h 127.0.0.1 -D foodvariety -u foodvariety -pfoodvariety"
+    }
+}
