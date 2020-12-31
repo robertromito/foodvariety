@@ -8,7 +8,7 @@
             "console": "internalConsole",
             "mainClass": "com.robertromito.foodvariety.FoodvarietyApplication",
             "projectName": "foodvariety",
-            "args": ""
+            "args": "--spring.profiles.active=local"
         }
     ]
 }
