@@ -1,0 +1,17 @@
+## Stuff to ignore
+.git
+.gradle
+.settings
+.vscode
+bin
+build
+gradle
+node_modules
+src
+ui
+*.json
+*.js
+*.md
+
+## Except
+!build/libs

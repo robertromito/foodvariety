@@ -5,7 +5,7 @@
         "build": "rollup -c",
         "dev": "rollup -c -w",
         "start": "sirv src/main/resources/static",
-        "stack:up": "docker-compose up",
+        "stack:up": "docker-compose up db",
         "stack:clean": "docker-compose down && docker volume rm foodvariety_db_data",
         "db:connect": "mysql -h 127.0.0.1 -D foodvariety -u foodvariety -pfoodvariety"
     },
