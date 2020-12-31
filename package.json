@@ -7,7 +7,7 @@
         "build:ui": "rollup -c",
         "build:backend": "./gradlew clean build",
         "build:docker": "docker-compose build",
-        "dev": "npm run stack:up && concurrently \"npm run dev:ui\" \"npm run dev:backend\"",
+        "dev": "concurrently \"npm run stack:up\" \"npm run dev:ui\" \"npm run dev:backend\"",
         "dev:ui": "rollup -c -w",
         "dev:backend": "./gradlew bootRunLocal",
         "start": "sirv src/main/resources/static",
