@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Svelte ###
+/node_modules/
+/public/build/
