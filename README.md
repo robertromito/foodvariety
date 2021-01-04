@@ -32,5 +32,5 @@ First step after pulling down the repo is running `npm install`
 
 * If you're working on pure front end stuff:  `npm run dev:ui` and visit http://localhost:5000
 * If you're working on the full stack: `npm run dev` and visit http://localhost:8080
-* When it's time to do a build: `npm run buid`
+* When it's time to do a build: `npm run build`
 * To run the fully build app locally: `npm run system` and visit http://localhost:8080

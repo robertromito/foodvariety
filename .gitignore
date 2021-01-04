@@ -39,3 +39,5 @@ out/
 ### Svelte ###
 /node_modules/
 /public/build/
+
+/coverage/

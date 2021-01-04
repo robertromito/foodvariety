@@ -1,8 +1,24 @@
-const { intros } = require("svelte/internal")
+const { intros, beforeUpdate } = require("svelte/internal")
 
 describe('Index tests', () => {
-    it('loads the index page successfully', () => {
+
+    beforeEach(() => {
         cy.visit('/')
-        cy.contains('Food Variety')
+    })
+
+    it('loads the index page successfully', () => {
+        cy.contains('Food Variety Tracker')
+    })
+
+    it('has a list of eaters', () => {
+        cy.get('[data-qa=in_eater]').should('exist')
+    })
+
+    it('has a submit button', () => {
+        cy.get('[data-qa=in_food]').should('exist')
+    })
+
+    it('has a submit button', () => {
+        cy.get('[data-qa=btn_submit]').should('exist')
     })
 })

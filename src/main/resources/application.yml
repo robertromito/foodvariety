@@ -1,6 +1,10 @@
 spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
   datasource:
-    url: jdbc:mysql://db:3306/foodvariety
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://db:3306/foodvariety
     username: foodvariety
     password: foodvariety
 ---
@@ -19,6 +23,6 @@ spring:
     activate:
       on-profile: local
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/foodvariety
+    url: jdbc:mariadb://127.0.0.1:3306/foodvariety
     username: foodvariety
     password: foodvariety

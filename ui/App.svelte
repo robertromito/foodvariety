@@ -1,29 +1,21 @@
 <script>
-	export let name;
+	import FoodConsumed from "./FoodConsumed.svelte"
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+<style lang="scss" global>
+	@import "bulma/bulma";
 </style>
+
+<nav class="navbar">
+	<div class="navbar-brand">
+		<div class="navbar-item">
+			<span class="title">Food Variety Tracker</span>
+		</div>
+	</div>
+</nav>
+
+<section class="section">
+	<div class="container">
+		<FoodConsumed />
+	</div>
+</section>
